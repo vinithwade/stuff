@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stuff — Waitlist</title>
+  <meta name="description" content="Stuff is the control plane for AI software teams. It plans the work, runs Claude, Codex and Cursor on it, verifies every change, and ships — while you stay in control." />
+  <link rel="icon" href="assets/logoicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="bar" id="bar">
+    <a href="#cta" class="bar__in">
+      <span class="bar__pill">New</span>
+      Stuff is in private beta — claim your spot
+      <span class="bar__arr">→</span>
+    </a>
+    <button class="bar__x" id="barX" aria-label="Dismiss">×</button>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__in">
+      <a href="#top" class="nav__logo" aria-label="Stuff home">
+        <img src="assets/logo.png" alt="Stuff" />
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#features">Platform</a>
+        <a href="#security">Security</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav__right">
+        <a href="#" class="nav__signin">Sign in</a>
+        <a href="#cta" class="btn btn--solid">Get early access <span>→</span></a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+    <div class="nav__sheet" id="sheet">
+      <a href="#how">How it works</a>
+      <a href="#features">Platform</a>
+      <a href="#security">Security</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta" class="btn btn--solid btn--full">Get early access</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <a class="pill" href="#features">
+        <span class="pill__tag">Multi-agent</span>
+        Run Claude, Codex &amp; Cursor on one codebase
+        <span class="pill__arr">→</span>
+      </a>
+
+      <h1 class="hero__h1">Ship software with a<br /><span class="grad">team of AI agents.</span></h1>
+
+      <p class="hero__sub">
+        Stuff is the control plane for AI engineering. It plans the work, runs your agents on it,
+        verifies every change — and ships while you stay in control.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#cta" class="btn btn--solid btn--lg">Start building <span>→</span></a>
+        <a href="#how" class="btn btn--line btn--lg">See how it works</a>
+      </div>
+
+      <!-- PRODUCT VISUAL -->
+      <div class="shot reveal">
+        <div class="shot__bar">
+          <span class="shot__dots"><i></i><i></i><i></i></span>
+          <span class="shot__url">stuff.dev / run #241 — checkout flow</span>
+          <span class="shot__live"><i></i>live</span>
+        </div>
+        <div class="shot__body">
+          <aside class="shot__side">
+            <p class="shot__lab">Run pipeline</p>
+            <ul class="steps">
+              <li class="done"><i></i>Plan &amp; spec</li>
+              <li class="done"><i></i>Architecture</li>
+              <li class="done"><i></i>Task graph</li>
+              <li class="active"><i></i>Agents working</li>
+              <li><i></i>Verify</li>
+              <li><i></i>Review</li>
+              <li><i></i>Open PR</li>
+            </ul>
+          </aside>
+          <div class="shot__main">
+            <div class="board">
+              <div class="tcard"><span class="tag tag--ok">done</span>Payment schema<small>claude</small></div>
+              <div class="tcard"><span class="tag tag--ok">done</span>Auth guard<small>claude</small></div>
+              <div class="tcard tcard--run"><span class="tag tag--run">running</span>Checkout API<small>claude · branch</small></div>
+              <div class="tcard"><span class="tag">queued</span>Cart UI<small>codex</small></div>
+              <div class="tcard"><span class="tag">queued</span>E2E tests<small>queued</small></div>
+              <div class="tcard"><span class="tag">queued</span>Receipt email<small>codex</small></div>
+            </div>
+            <div class="checks">
+              <span class="check check--ok">✓ typecheck</span>
+              <span class="check check--ok">✓ 14 tests</span>
+              <span class="check check--ok">✓ build</span>
+              <span class="check check--wait">● migration → needs your approval</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOGO CLOUD -->
+      <p class="cloud__label">Orchestrates the agents and tools you already use</p>
+      <div class="cloud">
+        <span>Claude</span><span>Codex</span><span>Cursor</span><span>Gemini</span>
+        <span>GitHub</span><span>Temporal</span><span>MCP</span>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="sec" id="how">
+      <div class="sec__head">
+        <p class="kick">How it works</p>
+        <h2>One idea in.<br />A reviewed, tested change out.</h2>
+      </div>
+      <div class="grid3">
+        <article class="feat reveal">
+          <div class="feat__n">01</div>
+          <h3>It plans</h3>
+          <p>Your idea becomes a spec, an architecture, and a graph of small, scoped tasks.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="feat__n">02</div>
+          <h3>Agents build</h3>
+          <p>Each task runs Claude, Codex or Cursor in an isolated branch with the access it needs.</p>
+        </article>
+        <article class="feat reveal">
+          <div class="feat__n">03</div>
+          <h3>It verifies &amp; ships</h3>
+          <p>Tests, fresh-eyes reviews and your approval gate every change before the PR opens.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BENTO / PLATFORM -->
+    <section class="sec sec--alt" id="features">
+      <div class="sec__head">
+        <p class="kick">The platform</p>
+        <h2>Your agents are the workers.<br />Stuff is the engineering org.</h2>
+      </div>
+
+      <div class="bento">
+        <article class="bx bx--lg reveal">
+          <div class="bx__copy">
+            <h3>Plans the whole build</h3>
+            <p>From idea to spec to a dependency-aware task graph — no giant prompt, no wrong problem.</p>
+          </div>
+          <div class="bx__viz">
+            <div class="mini">
+              <span class="mini__node is-1">Spec</span>
+              <span class="mini__node is-2">API</span>
+              <span class="mini__node is-3">UI</span>
+              <span class="mini__node is-4">Tests</span>
+              <svg viewBox="0 0 300 120" class="mini__svg" aria-hidden="true">
+                <line x1="46" y1="34" x2="150" y2="60"/>
+                <line x1="46" y1="34" x2="150" y2="60"/>
+                <line x1="150" y1="60" x2="250" y2="34"/>
+                <line x1="150" y1="60" x2="250" y2="92"/>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article class="bx reveal">
+          <div class="bx__ic">⌘</div>
+          <h3>Model-agnostic</h3>
+          <p>Routes each task to the best agent — Claude, Codex, Cursor, Gemini.</p>
+        </article>
+
+        <article class="bx reveal">
+          <div class="bx__ic">✓</div>
+          <h3>Mandatory verification</h3>
+          <p>Lint, types, tests, e2e and visual diffs run on every task.</p>
+        </article>
+
+        <article class="bx reveal">
+          <div class="bx__ic">◎</div>
+          <h3>Independent review</h3>
+          <p>Fresh-context reviewers — never the author — catch bugs &amp; regressions.</p>
+        </article>
+
+        <article class="bx bx--wide reveal">
+          <div class="bx__copy">
+            <h3>Full audit trail</h3>
+            <p>Every prompt, file, command and approval is logged and replayable, run after run.</p>
+          </div>
+          <div class="bx__viz bx__viz--log">
+            <span><i class="d g"></i>edit src/checkout/api.ts</span>
+            <span><i class="d g"></i>run npm test — passed</span>
+            <span><i class="d y"></i>migrate prod — approval requested</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECURITY -->
+    <section class="sec" id="security">
+      <div class="split">
+        <div class="split__copy">
+          <p class="kick">Stays in your control</p>
+          <h2>Agents get exactly the access they need. Nothing more.</h2>
+          <ul class="ticks">
+            <li>Scoped files, allowed commands, short-lived tokens</li>
+            <li>Risky steps — migrations, prod writes — wait for one click</li>
+            <li>Deny rules always win, and every action is audited</li>
+          </ul>
+        </div>
+        <div class="split__card reveal">
+          <div class="perm"><span class="perm__d perm__d--g"></span>Read <code>src/checkout/**</code></div>
+          <div class="perm"><span class="perm__d perm__d--g"></span>Run <code>npm test</code></div>
+          <div class="perm"><span class="perm__d perm__d--y"></span>Migrate prod <em>→ ask you</em></div>
+          <div class="perm"><span class="perm__d perm__d--r"></span>Read <code>.env</code> <em>→ denied</em></div>
+          <div class="perm"><span class="perm__d perm__d--r"></span>Push to <code>main</code> <em>→ denied</em></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA (dark) -->
+    <section class="cta" id="cta">
+      <div class="cta__grid" aria-hidden="true"></div>
+      <div class="cta__in">
+        <h2>Build like a funded<br />engineering team.</h2>
+        <p class="cta__sub">Stop prompting a chatbot. Start shipping with agents you can trust.</p>
+        <form class="cta__form" id="waitlist" novalidate>
+          <input type="email" id="email" placeholder="you@company.com" aria-label="Email" />
+          <button class="btn btn--white btn--lg" type="submit">Get early access</button>
+        </form>
+        <p class="cta__note" id="note">Early teams get hands-on onboarding. No credit card.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="foot" id="faq">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <img src="assets/logoicon.png" alt="Stuff" class="foot__icon" />
+        <p>The control plane for<br />AI software teams.</p>
+        <span class="status"><i></i>All systems operational</span>
+      </div>
+      <nav class="foot__col"><b>Product</b><a href="#how">How it works</a><a href="#features">Platform</a><a href="#security">Security</a><a href="#cta">Early access</a></nav>
+      <nav class="foot__col"><b>Company</b><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Contact</a></nav>
+      <nav class="foot__col"><b>Resources</b><a href="#">Docs</a><a href="#">Changelog</a><a href="#">Status</a></nav>
+      <nav class="foot__col"><b>Legal</b><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Security</a></nav>
+    </div>
+    <div class="foot__bottom">
+      <span>© 2026 Stuff, Inc.</span>
+      <div class="foot__social">
+        <a href="#" aria-label="X / Twitter">X</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
