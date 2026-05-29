@@ -137,21 +137,29 @@
         <p class="kick">How it works</p>
         <h2>One idea in.<br />A reviewed, tested change out.</h2>
       </div>
-      <div class="grid3">
-        <article class="feat reveal">
-          <div class="feat__n">01</div>
+      <div class="steps3">
+        <span class="steps3__chev" style="left:33.33%" aria-hidden="true">›</span>
+        <span class="steps3__chev" style="left:66.66%" aria-hidden="true">›</span>
+
+        <article class="st reveal">
+          <div class="st__node">01</div>
           <h3>It plans</h3>
           <p>Your idea becomes a spec, an architecture, and a graph of small, scoped tasks.</p>
+          <div class="st__meta">spec · architecture · task graph</div>
         </article>
-        <article class="feat reveal">
-          <div class="feat__n">02</div>
+
+        <article class="st reveal">
+          <div class="st__node">02</div>
           <h3>Agents build</h3>
           <p>Each task runs Claude, Codex or Cursor in an isolated branch with the access it needs.</p>
+          <div class="st__meta">claude · codex · cursor · branches</div>
         </article>
-        <article class="feat reveal">
-          <div class="feat__n">03</div>
-          <h3>It verifies &amp; ships</h3>
+
+        <article class="st reveal">
+          <div class="st__node">03</div>
+          <h3>Verify &amp; ship</h3>
           <p>Tests, fresh-eyes reviews and your approval gate every change before the PR opens.</p>
+          <div class="st__meta">tests · review · approval · PR</div>
         </article>
       </div>
     </section>
@@ -163,55 +171,74 @@
         <h2>Your agents are the workers.<br />Stuff is the engineering org.</h2>
       </div>
 
-      <div class="bento">
-        <article class="bx bx--lg reveal">
-          <div class="bx__copy">
-            <h3>Plans the whole build</h3>
-            <p>From idea to spec to a dependency-aware task graph — no giant prompt, no wrong problem.</p>
+      <div class="plat">
+        <!-- HERO TILE -->
+        <article class="ptile ptile--hero reveal">
+          <div class="orch" aria-hidden="true">
+            <svg class="orch__svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <line x1="13" y1="50" x2="50" y2="50" vector-effect="non-scaling-stroke"/>
+              <line x1="50" y1="50" x2="83" y2="27" vector-effect="non-scaling-stroke"/>
+              <line x1="50" y1="50" x2="83" y2="73" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <span class="onode onode--done"  style="left:13%;top:50%">Spec<i>plan</i></span>
+            <span class="onode onode--run"   style="left:50%;top:50%">Task graph<i>6 tasks</i></span>
+            <span class="onode onode--blue"  style="left:83%;top:27%">Checkout API<i>claude</i></span>
+            <span class="onode onode--queue" style="left:83%;top:73%">Cart UI<i>codex</i></span>
           </div>
-          <div class="bx__viz">
-            <div class="mini">
-              <span class="mini__node is-1">Spec</span>
-              <span class="mini__node is-2">API</span>
-              <span class="mini__node is-3">UI</span>
-              <span class="mini__node is-4">Tests</span>
-              <svg viewBox="0 0 300 120" class="mini__svg" aria-hidden="true">
-                <line x1="46" y1="34" x2="150" y2="60"/>
-                <line x1="46" y1="34" x2="150" y2="60"/>
-                <line x1="150" y1="60" x2="250" y2="34"/>
-                <line x1="150" y1="60" x2="250" y2="92"/>
-              </svg>
+          <div class="ptile__foot">
+            <div>
+              <span class="ptile__kick">Orchestration</span>
+              <h3>Plans &amp; runs the whole build</h3>
+              <p>One idea becomes a scoped task graph — then your agents execute it in parallel.</p>
             </div>
+            <div class="agents"><span>Claude</span><span>Codex</span><span>Cursor</span><span>Gemini</span></div>
           </div>
         </article>
 
-        <article class="bx reveal">
-          <div class="bx__ic">⌘</div>
-          <h3>Model-agnostic</h3>
-          <p>Routes each task to the best agent — Claude, Codex, Cursor, Gemini.</p>
-        </article>
-
-        <article class="bx reveal">
-          <div class="bx__ic">✓</div>
-          <h3>Mandatory verification</h3>
-          <p>Lint, types, tests, e2e and visual diffs run on every task.</p>
-        </article>
-
-        <article class="bx reveal">
-          <div class="bx__ic">◎</div>
-          <h3>Independent review</h3>
-          <p>Fresh-context reviewers — never the author — catch bugs &amp; regressions.</p>
-        </article>
-
-        <article class="bx bx--wide reveal">
-          <div class="bx__copy">
-            <h3>Full audit trail</h3>
-            <p>Every prompt, file, command and approval is logged and replayable, run after run.</p>
+        <!-- VERIFY -->
+        <article class="ptile reveal">
+          <div class="ptile__top"><span class="ptile__kick">Verification</span><h3>Checked, not guessed</h3></div>
+          <div class="vlist">
+            <div class="vrow"><span class="vt vt--ok">✓</span>typecheck<em>passed</em></div>
+            <div class="vrow"><span class="vt vt--ok">✓</span>14 unit tests<em>passed</em></div>
+            <div class="vrow"><span class="vt vt--ok">✓</span>e2e · build<em>passed</em></div>
+            <div class="vrow"><span class="vt vt--wait">●</span>visual diff<em>review</em></div>
           </div>
-          <div class="bx__viz bx__viz--log">
-            <span><i class="d g"></i>edit src/checkout/api.ts</span>
-            <span><i class="d g"></i>run npm test — passed</span>
-            <span><i class="d y"></i>migrate prod — approval requested</span>
+        </article>
+
+        <!-- REVIEW -->
+        <article class="ptile reveal">
+          <div class="ptile__top"><span class="ptile__kick">Independent review</span><h3>Fresh eyes, every time</h3></div>
+          <div class="vlist">
+            <div class="vrow"><span class="sev sev--hi">High</span>null deref in API<em>fixed</em></div>
+            <div class="vrow"><span class="sev sev--md">Med</span>N+1 query<em>flagged</em></div>
+            <div class="vrow"><span class="sev sev--ok">✓</span>secrets scan<em>clean</em></div>
+          </div>
+        </article>
+
+        <!-- CONTROL -->
+        <article class="ptile reveal">
+          <div class="ptile__top"><span class="ptile__kick">Stays in your control</span><h3>You approve the risk</h3></div>
+          <div class="gate">
+            <div class="gate__row"><span class="gate__d"></span>migrate prod <code>orders</code></div>
+            <p class="gate__msg">Waiting for your approval</p>
+            <div class="gate__btns"><button class="gate__b gate__b--ok">Approve</button><button class="gate__b">Deny</button></div>
+          </div>
+        </article>
+
+        <!-- MEMORY -->
+        <article class="ptile reveal">
+          <div class="ptile__top"><span class="ptile__kick">Project memory</span><h3>Context that persists</h3></div>
+          <div class="chips">
+            <span>product truth</span><span>decisions</span><span>standards</span><span>data contracts</span><span>rejected paths</span>
+          </div>
+        </article>
+
+        <!-- LEARN -->
+        <article class="ptile reveal">
+          <div class="ptile__top"><span class="ptile__kick">Self-improvement</span><h3>Better every run</h3></div>
+          <div class="loop">
+            <span>Trace</span><i>→</i><span>Eval</span><i>→</i><span>Improve</span><i>→</i><span>Rollout</span><i class="loop__back">↺</i>
           </div>
         </article>
       </div>
