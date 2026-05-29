@@ -106,15 +106,28 @@
               <span class="check check--ok">✓ build</span>
               <span class="check check--wait">● migration → needs your approval</span>
             </div>
+            <div class="shot__log"><span class="shot__caret" id="logLine"></span></div>
           </div>
         </div>
       </div>
 
-      <!-- LOGO CLOUD -->
+      <!-- LOGO CLOUD (marquee) -->
       <p class="cloud__label">Orchestrates the agents and tools you already use</p>
-      <div class="cloud">
-        <span>Claude</span><span>Codex</span><span>Cursor</span><span>Gemini</span>
-        <span>GitHub</span><span>Temporal</span><span>MCP</span>
+      <div class="cloud" id="cloud">
+        <div class="cloud__track">
+          <span>Claude</span><span>Codex</span><span>Cursor</span><span>Gemini</span><span>GitHub</span><span>Temporal</span><span>MCP</span><span>Playwright</span>
+          <span aria-hidden="true">Claude</span><span aria-hidden="true">Codex</span><span aria-hidden="true">Cursor</span><span aria-hidden="true">Gemini</span><span aria-hidden="true">GitHub</span><span aria-hidden="true">Temporal</span><span aria-hidden="true">MCP</span><span aria-hidden="true">Playwright</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAND -->
+    <section class="stats" aria-label="Highlights">
+      <div class="stats__in">
+        <div class="stat"><b class="num" data-to="8">0</b><span>planes in the platform</span></div>
+        <div class="stat"><b class="num" data-to="100" data-suffix="%">0</b><span>of changes verified before merge</span></div>
+        <div class="stat"><b class="num" data-to="4" data-suffix="+">0</b><span>coding agents orchestrated</span></div>
+        <div class="stat"><b class="num" data-to="0">0</b><span>unscoped agent access</span></div>
       </div>
     </section>
 
@@ -239,10 +252,24 @@
         <p class="cta__note" id="note">Early teams get hands-on onboarding. No credit card.</p>
       </div>
     </section>
+    <!-- FAQ -->
+    <section class="sec faq" id="faq">
+      <div class="sec__head">
+        <p class="kick">FAQ</p>
+        <h2>Questions, answered.</h2>
+      </div>
+      <div class="faq__list">
+        <details class="qa"><summary>Does Stuff replace Claude Code or Cursor?<i></i></summary><p>No — it orchestrates them. Your agents stay the workers; Stuff is the planning, permission, verification and review layer above them.</p></details>
+        <details class="qa"><summary>Is it model-agnostic?<i></i></summary><p>Yes. Stuff routes each task to the best agent — Claude, Codex, Cursor or Gemini — and tracks cost as it goes.</p></details>
+        <details class="qa"><summary>How does it keep my codebase safe?<i></i></summary><p>Agents run in isolated branches and containers with scoped files, allowed commands and short-lived tokens. A policy engine gates anything risky, and every action is audited.</p></details>
+        <details class="qa"><summary>Can it run on-prem?<i></i></summary><p>Yes. Enterprise private runners keep execution, credentials and code inside your environment while streaming traces to your control center.</p></details>
+        <details class="qa"><summary>When can I start using it?<i></i></summary><p>Stuff is in private beta. Join the waitlist and early teams get hands-on onboarding.</p></details>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="foot" id="faq">
+  <footer class="foot" id="contact">
     <div class="foot__top">
       <div class="foot__brand">
         <img src="assets/logoicon.png" alt="Stuff" class="foot__icon" />
