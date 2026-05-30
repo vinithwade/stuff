@@ -5,11 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stuff — Waitlist</title>
   <meta name="description" content="Stuff is the control plane for AI software teams. It plans the work, runs Claude, Codex and Cursor on it, verifies every change, and ships — while you stay in control." />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vinithwade.github.io/stuff---landing-page/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stuff" />
+  <meta property="og:title" content="Stuff — the control plane for AI software teams" />
+  <meta property="og:description" content="Plan the work, run Claude, Codex & Cursor on it, verify every change, and ship — while you stay in control." />
+  <meta property="og:url" content="https://vinithwade.github.io/stuff---landing-page/" />
+  <meta property="og:image" content="https://vinithwade.github.io/stuff---landing-page/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stuff — the control plane for AI software teams" />
+  <meta name="twitter:description" content="Plan the work, run Claude, Codex & Cursor on it, verify every change, and ship — while you stay in control." />
+  <meta name="twitter:image" content="https://vinithwade.github.io/stuff---landing-page/assets/og.png" />
+
   <link rel="icon" href="assets/logoicon.png" />
+  <link rel="apple-touch-icon" href="assets/logoicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Stuff",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web",
+    "description": "The control plane for AI software teams. Stuff plans the work, runs coding agents like Claude, Codex and Cursor on it, verifies every change, and ships — while you stay in control.",
+    "url": "https://vinithwade.github.io/stuff---landing-page/",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
 </head>
 <body>
   <!-- ANNOUNCEMENT BAR -->
@@ -123,7 +158,7 @@
     <!-- STATS BAND -->
     <section class="stats" aria-label="Highlights">
       <div class="stats__in">
-        <div class="stat"><b class="num" data-to="8">0</b><span>planes in the platform</span></div>
+        <div class="stat"><b class="num" data-to="6">0</b><span>agents building in parallel</span></div>
         <div class="stat"><b class="num" data-to="100" data-suffix="%">0</b><span>of changes verified before merge</span></div>
         <div class="stat"><b class="num" data-to="4" data-suffix="+">0</b><span>coding agents orchestrated</span></div>
         <div class="stat"><b class="num" data-to="0">0</b><span>unscoped agent access</span></div>
@@ -262,6 +297,37 @@
           <div class="perm"><span class="perm__d perm__d--r"></span>Read <code>.env</code> <em>→ denied</em></div>
           <div class="perm"><span class="perm__d perm__d--r"></span>Push to <code>main</code> <em>→ denied</em></div>
         </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section class="sec sec--alt" id="why">
+      <div class="sec__head">
+        <p class="kick">The difference</p>
+        <h2>Vibe coding is a chat.<br />Stuff is an engineering org.</h2>
+      </div>
+      <div class="vs">
+        <article class="vs__col vs__col--old">
+          <header><span class="vs__tag">Prompting a chatbot</span><h3>You are the glue</h3></header>
+          <ul>
+            <li>You hold the plan in your head</li>
+            <li>One agent, one chat, one thread to babysit</li>
+            <li>"Looks done" — no tests, no review</li>
+            <li>Context resets; it forgets your decisions</li>
+            <li>Full access, fingers crossed</li>
+          </ul>
+        </article>
+        <span class="vs__mid" aria-hidden="true">vs</span>
+        <article class="vs__col vs__col--new reveal">
+          <header><span class="vs__tag vs__tag--on">With Stuff</span><h3>The system is the glue</h3></header>
+          <ul>
+            <li>One idea becomes a scoped task graph</li>
+            <li>Many agents run in parallel, isolated branches</li>
+            <li>Typecheck, tests &amp; fresh-eyes review on every change</li>
+            <li>Project memory keeps decisions across runs</li>
+            <li>Scoped access; risky steps wait for your click</li>
+          </ul>
+        </article>
       </div>
     </section>
 
