@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stuff — Waitlist</title>
-  <meta name="description" content="Stuff is the control plane for AI software teams. It plans the work, runs Claude, Codex and Cursor on it, verifies every change, and ships — while you stay in control." />
+  <meta name="description" content="Stuff is the agent orchestration layer for AI agents that build software — turning product intent into specs, task graphs, scoped agent runs, verification gates and review-ready PRs." />
   <meta name="theme-color" content="#ffffff" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://vinithwade.github.io/stuff---landing-page/" />
@@ -12,8 +12,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Stuff" />
-  <meta property="og:title" content="Stuff — the control plane for AI software teams" />
-  <meta property="og:description" content="Plan the work, run Claude, Codex & Cursor on it, verify every change, and ship — while you stay in control." />
+  <meta property="og:title" content="Stuff — ship real software with AI agents, without losing control" />
+  <meta property="og:description" content="The agent orchestration layer for AI agents that build software: product intent → specs → task graphs → scoped agent runs → verification → review-ready PRs." />
   <meta property="og:url" content="https://vinithwade.github.io/stuff---landing-page/" />
   <meta property="og:image" content="https://vinithwade.github.io/stuff---landing-page/assets/og.png" />
   <meta property="og:image:width" content="1200" />
@@ -21,8 +21,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Stuff — the control plane for AI software teams" />
-  <meta name="twitter:description" content="Plan the work, run Claude, Codex & Cursor on it, verify every change, and ship — while you stay in control." />
+  <meta name="twitter:title" content="Stuff — ship real software with AI agents, without losing control" />
+  <meta name="twitter:description" content="The agent orchestration layer for AI agents that build software: intent → specs → task graphs → scoped runs → verification → PRs." />
   <meta name="twitter:image" content="https://vinithwade.github.io/stuff---landing-page/assets/og.png" />
 
   <link rel="icon" href="assets/logoicon.png" />
@@ -40,7 +40,7 @@
     "name": "Stuff",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Web",
-    "description": "The control plane for AI software teams. Stuff plans the work, runs coding agents like Claude, Codex and Cursor on it, verifies every change, and ships — while you stay in control.",
+    "description": "The agent orchestration layer for AI agents that build software. Stuff turns product intent into specs, task graphs, scoped agent runs, verification gates and review-ready PRs.",
     "url": "https://vinithwade.github.io/stuff---landing-page/",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
   }
@@ -50,8 +50,8 @@
   <!-- ANNOUNCEMENT BAR -->
   <div class="bar" id="bar">
     <a href="#cta" class="bar__in">
-      <span class="bar__pill">New</span>
-      Stuff is in private beta — claim your spot
+      <span class="bar__pill">Beta</span>
+      Stuff is in private beta — request access
       <span class="bar__arr">→</span>
     </a>
     <button class="bar__x" id="barX" aria-label="Dismiss">×</button>
@@ -64,22 +64,23 @@
         <img src="assets/logo.png" alt="Stuff" />
       </a>
       <nav class="nav__links" aria-label="Primary">
+        <a href="#problem">Problem</a>
         <a href="#how">How it works</a>
-        <a href="#features">Platform</a>
-        <a href="#security">Security</a>
-        <a href="#faq">FAQ</a>
+        <a href="#security">Control</a>
+        <a href="#for">Who it's for</a>
       </nav>
       <div class="nav__right">
-        <a href="#cta" class="btn btn--solid">Get early access <span>→</span></a>
+        <a href="#cta" class="btn btn--solid">Request access <span>→</span></a>
       </div>
       <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
     </div>
     <div class="nav__sheet" id="sheet">
+      <a href="#problem">Problem</a>
       <a href="#how">How it works</a>
-      <a href="#features">Platform</a>
-      <a href="#security">Security</a>
+      <a href="#security">Control</a>
+      <a href="#for">Who it's for</a>
       <a href="#faq">FAQ</a>
-      <a href="#cta" class="btn btn--solid btn--full">Get early access</a>
+      <a href="#cta" class="btn btn--solid btn--full">Request access</a>
     </div>
   </header>
 
@@ -87,23 +88,25 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero__grid" aria-hidden="true"></div>
-      <a class="pill" href="#features">
-        <span class="pill__tag">Multi-agent</span>
-        Run Claude, Codex &amp; Cursor on one codebase
+      <a class="pill" href="#demo">
+        <span class="pill__tag">Private beta</span>
+        The orchestration layer for AI coding agents
         <span class="pill__arr">→</span>
       </a>
 
-      <h1 class="hero__h1">Ship software with a<br /><span class="grad">team of AI agents.</span></h1>
+      <h1 class="hero__h1">Ship real software with AI agents —<br /><span class="grad">without losing control.</span></h1>
 
       <p class="hero__sub">
-        Stuff is the control plane for AI engineering. It plans the work, runs your agents on it,
-        verifies every change — and ships while you stay in control.
+        Stuff is the agent orchestration layer for AI agents that build software. It turns product
+        intent into specs, task graphs, scoped agent runs, verification gates, and review-ready PRs.
       </p>
 
       <div class="hero__cta">
-        <a href="#cta" class="btn btn--solid btn--lg">Start building <span>→</span></a>
-        <a href="#how" class="btn btn--line btn--lg">See how it works</a>
+        <a href="#cta" class="btn btn--solid btn--lg">Join private beta <span>→</span></a>
+        <a href="#demo" class="btn btn--line btn--lg"><span class="btn__play">▶</span>Watch 60-sec demo</a>
       </div>
+
+      <p class="hero__built">Built for teams using <b>Claude Code</b>, <b>Codex</b>, <b>Cursor</b>, <b>GitHub</b>, and modern AI coding workflows.</p>
 
       <!-- PRODUCT VISUAL -->
       <div class="shot reveal">
@@ -196,18 +199,38 @@
       </div>
     </section>
 
-    <!-- STATS BAND -->
-    <section class="stats" aria-label="Highlights">
-      <div class="stats__in">
-        <div class="stat"><b class="num" data-to="6">0</b><span>agents building in parallel</span></div>
-        <div class="stat"><b class="num" data-to="100" data-suffix="%">0</b><span>of changes verified before merge</span></div>
-        <div class="stat"><b class="num" data-to="4" data-suffix="+">0</b><span>coding agents orchestrated</span></div>
-        <div class="stat"><b class="num" data-to="0">0</b><span>unscoped agent access</span></div>
+    <!-- CAPABILITY STRIP -->
+    <section class="caps" aria-label="Capabilities">
+      <div class="caps__in">
+        <span class="cap"><i></i>Parallel agent runs</span>
+        <span class="cap"><i></i>Verified before PR</span>
+        <span class="cap"><i></i>Scoped agent access</span>
+        <span class="cap"><i></i>Audit-ready workflows</span>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="sec" id="problem">
+      <div class="sec__head">
+        <p class="kick">The problem</p>
+        <h2>AI coding is fast.<br />Software delivery is still messy.</h2>
+        <p class="sec__lead">Claude, Codex and Cursor generate code in seconds — but teams still have to turn ideas
+          into tasks, control what agents can touch, review large diffs, check tests, approve risky changes,
+          and track what actually happened. Stuff is the missing layer between AI-generated code and software
+          you can safely ship.</p>
+      </div>
+      <div class="probs">
+        <div class="prob reveal"><span class="prob__i">!</span><p>Vague prompts become messy output</p></div>
+        <div class="prob reveal"><span class="prob__i">!</span><p>Agents work without clear task ownership</p></div>
+        <div class="prob reveal"><span class="prob__i">!</span><p>Generated diffs are hard to review</p></div>
+        <div class="prob reveal"><span class="prob__i">!</span><p>Tests and checks are easy to skip</p></div>
+        <div class="prob reveal"><span class="prob__i">!</span><p>Risky changes need human approval</p></div>
+        <div class="prob reveal"><span class="prob__i">!</span><p>Context gets lost between sessions</p></div>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section class="sec" id="how">
+    <section class="sec sec--alt" id="how">
       <div class="sec__head">
         <p class="kick">How it works</p>
         <h2>One idea in.<br />A reviewed, tested change out.</h2>
@@ -219,31 +242,83 @@
         <article class="st reveal">
           <div class="st__node">01</div>
           <h3>It plans</h3>
-          <p>Your idea becomes a spec, an architecture, and a graph of small, scoped tasks.</p>
+          <p>Stuff turns a vague product request into a spec, architecture, and task graph your agents can actually execute.</p>
           <div class="st__meta">spec · architecture · task graph</div>
         </article>
 
         <article class="st reveal">
           <div class="st__node">02</div>
           <h3>Agents build</h3>
-          <p>Each task runs Claude, Codex or Cursor in an isolated branch with the access it needs.</p>
+          <p>Each agent gets a scoped task, an isolated branch, and only the files, commands, and tools it needs.</p>
           <div class="st__meta">claude · codex · cursor · branches</div>
         </article>
 
         <article class="st reveal">
           <div class="st__node">03</div>
           <h3>Verify &amp; ship</h3>
-          <p>Tests, fresh-eyes reviews and your approval gate every change before the PR opens.</p>
+          <p>Every change is checked with tests, build, review, and approval gates before it becomes a PR.</p>
           <div class="st__meta">tests · review · approval · PR</div>
         </article>
       </div>
     </section>
 
+    <!-- DEMO -->
+    <section class="sec" id="demo">
+      <div class="sec__head">
+        <p class="kick">See it work</p>
+        <h2>Idea in. Verified PR out — in about a minute.</h2>
+        <p class="sec__lead">Watch Stuff turn a product request into a reviewed, tested pull request.</p>
+      </div>
+      <div class="demo">
+        <div class="demo__player">
+          <div class="demo__bar">
+            <span class="shot__dots"><i></i><i></i><i></i></span>
+            <span class="demo__cap">stuff — idea → PR</span>
+            <button class="demo__btn" id="demoPlay" type="button"><span>▶</span> Replay</button>
+          </div>
+          <ol class="flow" id="flow">
+            <li><span class="flow__n">1</span><div class="flow__b"><b>Enter a product idea</b><em>“Add guest checkout”</em></div><span class="flow__c"></span></li>
+            <li><span class="flow__n">2</span><div class="flow__b"><b>Stuff writes the spec</b><em>scope · acceptance criteria</em></div><span class="flow__c"></span></li>
+            <li><span class="flow__n">3</span><div class="flow__b"><b>Task graph appears</b><em>6 small, scoped tasks</em></div><span class="flow__c"></span></li>
+            <li><span class="flow__n">4</span><div class="flow__b"><b>Agents run in branches</b><em>claude · codex, isolated</em></div><span class="flow__c"></span></li>
+            <li><span class="flow__n">5</span><div class="flow__b"><b>Tests &amp; build pass</b><em>✓ typecheck · 14 tests</em></div><span class="flow__c"></span></li>
+            <li><span class="flow__n">6</span><div class="flow__b"><b>Risky step waits</b><em>migration → your approval</em></div><span class="flow__c"></span></li>
+            <li><span class="flow__n">7</span><div class="flow__b"><b>PR is opened</b><em>#128 — review-ready</em></div><span class="flow__c"></span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROL / SECURITY -->
+    <section class="sec sec--alt" id="security">
+      <div class="split">
+        <div class="split__copy">
+          <p class="kick">Control &amp; security</p>
+          <h2>Give agents tasks, not full control.</h2>
+          <p class="split__lead">Stuff scopes what every agent can read, edit, run, and request.</p>
+          <ul class="ticks">
+            <li>Block access to secrets</li>
+            <li>Require approval for risky commands</li>
+            <li>Run work in isolated branches</li>
+            <li>Verify changes before PR</li>
+            <li>Keep an audit trail of every action</li>
+          </ul>
+        </div>
+        <div class="split__card reveal">
+          <div class="perm"><span class="perm__d perm__d--g"></span>Read <code>src/checkout/**</code></div>
+          <div class="perm"><span class="perm__d perm__d--g"></span>Run <code>npm test</code></div>
+          <div class="perm"><span class="perm__d perm__d--y"></span>Migrate prod <em>→ ask you</em></div>
+          <div class="perm"><span class="perm__d perm__d--r"></span>Read <code>.env</code> <em>→ denied</em></div>
+          <div class="perm"><span class="perm__d perm__d--r"></span>Push to <code>main</code> <em>→ denied</em></div>
+        </div>
+      </div>
+    </section>
+
     <!-- BENTO / PLATFORM -->
-    <section class="sec sec--alt" id="features">
+    <section class="sec" id="features">
       <div class="sec__head">
         <p class="kick">The platform</p>
-        <h2>Your agents are the workers.<br />Stuff is the engineering org.</h2>
+        <h2>AI agents write code.<br />Stuff runs the delivery workflow around them.</h2>
       </div>
 
       <div class="plat">
@@ -319,72 +394,104 @@
       </div>
     </section>
 
-    <!-- SECURITY -->
-    <section class="sec" id="security">
-      <div class="split">
-        <div class="split__copy">
-          <p class="kick">Stays in your control</p>
-          <h2>Agents get exactly the access they need. Nothing more.</h2>
-          <ul class="ticks">
-            <li>Scoped files, allowed commands, short-lived tokens</li>
-            <li>Risky steps — migrations, prod writes — wait for one click</li>
-            <li>Deny rules always win, and every action is audited</li>
-          </ul>
-        </div>
-        <div class="split__card reveal">
-          <div class="perm"><span class="perm__d perm__d--g"></span>Read <code>src/checkout/**</code></div>
-          <div class="perm"><span class="perm__d perm__d--g"></span>Run <code>npm test</code></div>
-          <div class="perm"><span class="perm__d perm__d--y"></span>Migrate prod <em>→ ask you</em></div>
-          <div class="perm"><span class="perm__d perm__d--r"></span>Read <code>.env</code> <em>→ denied</em></div>
-          <div class="perm"><span class="perm__d perm__d--r"></span>Push to <code>main</code> <em>→ denied</em></div>
-        </div>
-      </div>
-    </section>
-
     <!-- COMPARISON -->
-    <section class="sec sec--alt" id="why">
+    <section class="sec sec--alt" id="compare">
       <div class="sec__head">
-        <p class="kick">The difference</p>
-        <h2>Vibe coding is a chat.<br />Stuff is an engineering org.</h2>
+        <p class="kick">Stuff vs. vibe coding</p>
+        <h2>Vibe coding gives you code.<br />Stuff gives you shipped software.</h2>
       </div>
       <div class="vs">
         <article class="vs__col vs__col--old">
-          <header><span class="vs__tag">Prompting a chatbot</span><h3>You are the glue</h3></header>
+          <header><span class="vs__tag">Without Stuff</span><h3>You are the glue</h3></header>
           <ul>
-            <li>You hold the plan in your head</li>
-            <li>One agent, one chat, one thread to babysit</li>
-            <li>"Looks done" — no tests, no review</li>
-            <li>Context resets; it forgets your decisions</li>
-            <li>Full access, fingers crossed</li>
+            <li>You prompt one agent at a time</li>
+            <li>You re-explain context every session</li>
+            <li>You review large diffs yourself</li>
+            <li>You check tests by hand</li>
+            <li>You hope it didn't touch the wrong files</li>
           </ul>
         </article>
         <span class="vs__mid" aria-hidden="true">vs</span>
         <article class="vs__col vs__col--new reveal">
           <header><span class="vs__tag vs__tag--on">With Stuff</span><h3>The system is the glue</h3></header>
           <ul>
-            <li>One idea becomes a scoped task graph</li>
-            <li>Many agents run in parallel, isolated branches</li>
-            <li>Typecheck, tests &amp; fresh-eyes review on every change</li>
-            <li>Project memory keeps decisions across runs</li>
-            <li>Scoped access; risky steps wait for your click</li>
+            <li>Product intent becomes a task graph</li>
+            <li>Agents run in scoped, isolated branches</li>
+            <li>Access is limited per task</li>
+            <li>Tests and reviews run automatically</li>
+            <li>Risky steps wait for your approval</li>
+            <li>Every action has an audit trail</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <!-- CLOSING CTA (dark) -->
-    <section class="cta" id="cta">
-      <div class="cta__grid" aria-hidden="true"></div>
-      <div class="cta__in">
-        <h2>Build like a funded<br />engineering team.</h2>
-        <p class="cta__sub">Stop prompting a chatbot. Start shipping with agents you can trust.</p>
-        <form class="cta__form" id="waitlist" novalidate>
-          <input type="email" id="email" placeholder="you@company.com" aria-label="Email" />
-          <button class="btn btn--white btn--lg" type="submit">Get early access</button>
-        </form>
-        <p class="cta__note" id="note">Early teams get hands-on onboarding. No credit card.</p>
+    <!-- WHO IT'S FOR -->
+    <section class="sec" id="for">
+      <div class="sec__head">
+        <p class="kick">Who it's for</p>
+        <h2>Built for teams already using AI to write code.</h2>
+      </div>
+      <div class="who-grid">
+        <article class="whoc reveal"><h3>Founders &amp; solo builders</h3><p>Using Claude or Codex to ship product fast, before hiring a full team.</p></article>
+        <article class="whoc reveal"><h3>AI-native startups</h3><p>Turning prompts into real, tracked product work — not throwaway chat output.</p></article>
+        <article class="whoc reveal"><h3>Engineering teams piloting agents</h3><p>Running autonomous coding agents with guardrails, branches and reviews.</p></article>
+        <article class="whoc reveal"><h3>Teams that need to trust agents</h3><p>Permissions, approvals, tests and audit logs before anything reaches main.</p></article>
       </div>
     </section>
+
+    <!-- WHY NOW -->
+    <section class="sec sec--alt" id="whynow">
+      <div class="sec__head">
+        <p class="kick">Why now</p>
+        <h2>The bottleneck moved from writing code to trusting it.</h2>
+        <p class="sec__lead">Software teams are shifting from single-player coding assistants to multi-agent software
+          delivery. The next bottleneck isn't code generation — it's coordinating, verifying and trusting the
+          agents that generate it. Stuff is building the orchestration layer for that shift.</p>
+      </div>
+      <div class="shift">
+        <div class="shift__row reveal"><span class="shift__from">One coding assistant</span><i>→</i><span class="shift__to">Fleets of agents</span></div>
+        <div class="shift__row reveal"><span class="shift__from">Generating code</span><i>→</i><span class="shift__to">Coordinating &amp; verifying it</span></div>
+        <div class="shift__row reveal"><span class="shift__from">Chat output</span><i>→</i><span class="shift__to">Reviewed, shippable PRs</span></div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU GET IN BETA -->
+    <section class="sec" id="beta">
+      <div class="sec__head">
+        <p class="kick">The beta</p>
+        <h2>What early teams get.</h2>
+      </div>
+      <ul class="perks">
+        <li><i></i>Hands-on onboarding</li>
+        <li><i></i>Help setting up your first agent workflow</li>
+        <li><i></i>GitHub repo integration</li>
+        <li><i></i>Task-graph generation</li>
+        <li><i></i>Verification &amp; approval workflows</li>
+        <li><i></i>Direct founder support</li>
+      </ul>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="sec sec--alt" id="founder">
+      <div class="founder reveal">
+        <div class="founder__top">
+          <span class="founder__ava">VW</span>
+          <div><h3>Built by Vinith Wade</h3><span class="founder__role">Founder, Stuff</span></div>
+        </div>
+        <p>I'm building Stuff because AI coding agents are moving faster than the workflows around them.
+          I've been building web apps, AI projects and developer tools — and I believe the next generation of
+          software teams will manage fleets of agents, not just one assistant. Stuff is my attempt to build the
+          orchestration layer for that future.</p>
+        <div class="founder__links">
+          <a href="https://github.com/vinithwade" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">X</a>
+          <a href="mailto:devshooked@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
     <section class="sec faq" id="faq">
       <div class="sec__head">
@@ -396,7 +503,21 @@
         <details class="qa"><summary>Is it model-agnostic?<i></i></summary><p>Yes. Stuff routes each task to the best agent — Claude, Codex, Cursor or Gemini — and tracks cost as it goes.</p></details>
         <details class="qa"><summary>How does it keep my codebase safe?<i></i></summary><p>Agents run in isolated branches and containers with scoped files, allowed commands and short-lived tokens. A policy engine gates anything risky, and every action is audited.</p></details>
         <details class="qa"><summary>Can it run on-prem?<i></i></summary><p>Yes. Enterprise private runners keep execution, credentials and code inside your environment while streaming traces to your control center.</p></details>
-        <details class="qa"><summary>When can I start using it?<i></i></summary><p>Stuff is in private beta. Join the waitlist and early teams get hands-on onboarding.</p></details>
+        <details class="qa"><summary>When can I start using it?<i></i></summary><p>Stuff is in private beta. Request access and early teams get hands-on onboarding.</p></details>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA (dark) -->
+    <section class="cta" id="cta">
+      <div class="cta__grid" aria-hidden="true"></div>
+      <div class="cta__in">
+        <h2>Request private beta access.</h2>
+        <p class="cta__sub">We're onboarding teams using Claude Code, Codex, Cursor and GitHub to help shape the future of agentic software delivery.</p>
+        <form class="cta__form" id="waitlist" novalidate>
+          <input type="email" id="email" placeholder="you@company.com" aria-label="Work email" />
+          <button class="btn btn--white btn--lg" type="submit">Request beta access</button>
+        </form>
+        <p class="cta__note" id="note">Early teams get hands-on onboarding. No credit card.</p>
       </div>
     </section>
   </main>
@@ -406,20 +527,21 @@
     <div class="foot__in">
       <div class="foot__brand">
         <img src="assets/logoicon.png" alt="Stuff" class="foot__icon" />
-        <p>The control plane for AI software teams.</p>
+        <p>The orchestration layer for AI agents that build software.</p>
       </div>
       <div class="foot__right">
         <span class="status"><i></i>All systems operational</span>
         <div class="foot__social">
           <a href="#" aria-label="X / Twitter">X</a>
-          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="https://github.com/vinithwade" aria-label="GitHub">GitHub</a>
           <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:devshooked@gmail.com" aria-label="Email">Email</a>
         </div>
       </div>
     </div>
     <div class="foot__bottom">
-      <span>© 2026 Stuff, Inc.</span>
-      <a href="#cta">Get early access →</a>
+      <span>© 2026 Stuff</span>
+      <a href="#cta">Request beta access →</a>
     </div>
   </footer>
 
