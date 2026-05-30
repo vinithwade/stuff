@@ -366,9 +366,9 @@ a{color:inherit;text-decoration:none}
 .foot__right{display:flex;flex-direction:column;align-items:flex-end;gap:16px}
 .status{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--soft);padding:5px 12px;border:1px solid var(--line-2);border-radius:999px}
 .status i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(22,163,107,.16)}
-.foot__social{display:flex;gap:20px}
-.foot__social a{color:var(--soft);font-size:13.5px;font-weight:500;transition:color .2s}
-.foot__social a:hover{color:var(--ink)}
+.foot__social{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.foot__mail{color:var(--soft);font-size:13.5px;font-weight:500;margin-left:4px;transition:color .2s;word-break:break-all}
+.foot__mail:hover{color:var(--ink)}
 .foot__bottom{max-width:var(--maxw);margin:0 auto;padding:22px 24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;color:var(--faint);font-size:13px}
 .foot__bottom a{color:var(--soft);font-weight:500;transition:color .2s}
 .foot__bottom a:hover{color:var(--ink)}
@@ -458,9 +458,16 @@ a{color:inherit;text-decoration:none}
 .founder__dot{position:absolute;right:3px;bottom:3px;width:16px;height:16px;border-radius:50%;background:var(--green);border:3px solid #fff;z-index:1}
 .founder__name{margin-top:18px;font-size:21px;font-weight:700;letter-spacing:-.02em}
 .founder__role{margin-top:3px;font-size:13.5px;color:var(--faint)}
-.founder__links{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
-.founder__links a{font-size:13px;font-weight:550;color:var(--ink);border:1px solid var(--line-2);border-radius:9px;padding:7px 13px;transition:.18s;background:#fff}
-.founder__links a:hover{border-color:var(--ink);background:var(--ink);color:#fff;transform:translateY(-1px)}
+.founder__links{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+.founder__mail{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:500;color:var(--soft);word-break:break-all;transition:color .18s}
+.founder__mail:hover{color:var(--ink)}
+
+/* social icon buttons (founder + footer) */
+.founder__links .ico,.foot__social .ico{width:38px;height:38px;border-radius:10px;border:1px solid var(--line-2);background:#fff;
+  display:inline-flex;align-items:center;justify-content:center;color:var(--soft);
+  transition:transform .18s,background .18s,color .18s,border-color .18s}
+.founder__links .ico svg,.foot__social .ico svg{width:17px;height:17px;display:block}
+.founder__links .ico:hover,.foot__social .ico:hover{border-color:var(--ink);background:var(--ink);color:#fff;transform:translateY(-2px)}
 .founder__note{border:0;margin:0}
 .founder__kick{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
 .founder__note p{font-size:18px;line-height:1.66;color:var(--ink);letter-spacing:-.01em;font-weight:450}
