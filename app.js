@@ -78,6 +78,33 @@ const numIO = new IntersectionObserver(es => es.forEach(e => {
 }), { threshold: 0.6 });
 document.querySelectorAll('.num').forEach(el => numIO.observe(el));
 
+// ---- demo flow walkthrough ----
+const flow = document.getElementById('flow');
+if (flow) {
+  const rows = [...flow.children];
+  let ftimer;
+  function playFlow() {
+    clearTimeout(ftimer);
+    rows.forEach(r => r.classList.remove('on'));
+    let i = 0;
+    (function step() {
+      if (i >= rows.length) return;
+      rows[i].classList.add('on'); i++;
+      ftimer = setTimeout(step, 620);
+    })();
+  }
+  if (reduce) {
+    rows.forEach(r => r.classList.add('on'));
+  } else {
+    const fIO = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { playFlow(); fIO.unobserve(e.target); }
+    }), { threshold: 0.4 });
+    fIO.observe(flow);
+  }
+  const dp = document.getElementById('demoPlay');
+  if (dp) dp.addEventListener('click', playFlow);
+}
+
 // waitlist → Google Sheet
 const form = document.getElementById('waitlist');
 const note = document.getElementById('note');
