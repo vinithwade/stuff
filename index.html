@@ -109,38 +109,79 @@
       <div class="shot reveal">
         <div class="shot__bar">
           <span class="shot__dots"><i></i><i></i><i></i></span>
-          <span class="shot__url">stuff.dev / run #241 — checkout flow</span>
+          <span class="shot__crumb">
+            <img src="assets/logoicon.png" alt="" />
+            <b>checkout-flow</b><span>/</span>run&nbsp;#241
+          </span>
+          <span class="shot__branch">feat/checkout</span>
           <span class="shot__live"><i></i>live</span>
         </div>
         <div class="shot__body">
           <aside class="shot__side">
             <p class="shot__lab">Run pipeline</p>
             <ul class="steps">
-              <li class="done"><i></i>Plan &amp; spec</li>
-              <li class="done"><i></i>Architecture</li>
-              <li class="done"><i></i>Task graph</li>
-              <li class="active"><i></i>Agents working</li>
-              <li><i></i>Verify</li>
-              <li><i></i>Review</li>
-              <li><i></i>Open PR</li>
+              <li class="done"><i></i><span>Plan &amp; spec</span><em>4s</em></li>
+              <li class="done"><i></i><span>Architecture</span><em>11s</em></li>
+              <li class="done"><i></i><span>Task graph</span><em>6s</em></li>
+              <li class="active"><i></i><span>Agents working</span><em>1:48</em></li>
+              <li><i></i><span>Verify</span></li>
+              <li><i></i><span>Review</span></li>
+              <li><i></i><span>Open PR</span></li>
             </ul>
+            <div class="side__foot"><span><b>6</b> tasks</span><span><b>2</b> agents</span><span>$0.38</span></div>
           </aside>
           <div class="shot__main">
+            <div class="main__head">
+              <div class="main__title"><b>Task graph</b><span>running on 2 agents · 3 of 6 done</span></div>
+              <div class="ava-stack"><i class="ava ava--c">C</i><i class="ava ava--x">Co</i></div>
+            </div>
             <div class="board">
-              <div class="tcard"><span class="tag tag--ok">done</span>Payment schema<small>claude</small></div>
-              <div class="tcard"><span class="tag tag--ok">done</span>Auth guard<small>claude</small></div>
-              <div class="tcard tcard--run"><span class="tag tag--run">running</span>Checkout API<small>claude · branch</small></div>
-              <div class="tcard"><span class="tag">queued</span>Cart UI<small>codex</small></div>
-              <div class="tcard"><span class="tag">queued</span>E2E tests<small>queued</small></div>
-              <div class="tcard"><span class="tag">queued</span>Receipt email<small>codex</small></div>
+              <article class="tcard tcard--done">
+                <div class="tcard__top"><span class="tag tag--ok">done</span><span class="tcard__dur">0:38</span></div>
+                <p class="tcard__name">Payment schema</p>
+                <code class="tcard__file">db/schema.ts</code>
+                <div class="tcard__foot"><span class="who"><i class="ava ava--c">C</i>claude</span><span class="diff"><b>+124</b><s>−18</s></span></div>
+              </article>
+              <article class="tcard tcard--done">
+                <div class="tcard__top"><span class="tag tag--ok">done</span><span class="tcard__dur">0:52</span></div>
+                <p class="tcard__name">Auth guard</p>
+                <code class="tcard__file">middleware/auth.ts</code>
+                <div class="tcard__foot"><span class="who"><i class="ava ava--c">C</i>claude</span><span class="diff"><b>+86</b><s>−7</s></span></div>
+              </article>
+              <article class="tcard tcard--run">
+                <div class="tcard__top"><span class="tag tag--run">running</span><span class="tcard__dur">1:12</span></div>
+                <p class="tcard__name">Checkout API</p>
+                <code class="tcard__file">checkout/api.ts</code>
+                <div class="tcard__bar"><span></span></div>
+                <div class="tcard__foot"><span class="who"><i class="ava ava--c">C</i>claude</span><span class="diff"><b>+212</b><s>−40</s></span></div>
+              </article>
+              <article class="tcard tcard--queue">
+                <div class="tcard__top"><span class="tag">queued</span></div>
+                <p class="tcard__name">Cart UI</p>
+                <code class="tcard__file">ui/cart.tsx</code>
+                <div class="tcard__foot"><span class="who"><i class="ava ava--x">Co</i>codex</span></div>
+              </article>
+              <article class="tcard tcard--queue">
+                <div class="tcard__top"><span class="tag">queued</span></div>
+                <p class="tcard__name">E2E tests</p>
+                <code class="tcard__file">e2e/checkout.spec.ts</code>
+                <div class="tcard__foot"><span class="who"><i class="ava ava--c">C</i>claude</span></div>
+              </article>
+              <article class="tcard tcard--queue">
+                <div class="tcard__top"><span class="tag">queued</span></div>
+                <p class="tcard__name">Receipt email</p>
+                <code class="tcard__file">mail/receipt.tsx</code>
+                <div class="tcard__foot"><span class="who"><i class="ava ava--x">Co</i>codex</span></div>
+              </article>
             </div>
             <div class="checks">
-              <span class="check check--ok">✓ typecheck</span>
-              <span class="check check--ok">✓ 14 tests</span>
-              <span class="check check--ok">✓ build</span>
-              <span class="check check--wait">● migration → needs your approval</span>
+              <span class="checks__lab">Checks</span>
+              <span class="check check--ok"><i>✓</i>typecheck</span>
+              <span class="check check--ok"><i>✓</i>14 tests</span>
+              <span class="check check--ok"><i>✓</i>build</span>
+              <span class="check check--wait"><i>●</i>migration → needs approval</span>
             </div>
-            <div class="shot__log"><span class="shot__caret" id="logLine"></span></div>
+            <div class="shot__log"><span class="shot__dollar">$</span><span class="shot__caret" id="logLine"></span></div>
           </div>
         </div>
       </div>
